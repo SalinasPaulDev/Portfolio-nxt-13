@@ -1,0 +1,72 @@
+.title {
+    max-width: 500px;
+    line-height: 61px;
+    font-size: 62px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+
+.downloadMessage {
+    display: flex;
+    font-size: 16px;
+    align-items: flex-end;
+    justify-content: end;
+    max-width: fit-content ;
+    padding: 8px 15px;
+    border-radius: 15px;
+    transition: 0.3s ease-in-out;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.downloadMessage > p {
+    color: var(--dark-violet);
+    margin: auto 10px;
+    font-weight: 600;
+}
+
+.downloadMessage:hover {
+    cursor: pointer;
+    background-color: var(--light-background);
+}
+
+.contentDownload {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.subtitle{
+    color: var(--grey);
+    margin: 25px auto;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.icons > div {
+    cursor: pointer;
+}
+
+.icons > div:hover {
+    background-color: rgba(123, 74, 226, 0.2);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

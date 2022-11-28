@@ -1,0 +1,17 @@
+.container {
+    padding: 4px 16px;
+    background-color: var( --light-background);
+    color: var(--first-color);
+    max-width: max-content;
+    font-weight: 700;
+    border-radius: 15px;
+    margin: 20px 0;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.container > div {
+    text-align: center;
+}
