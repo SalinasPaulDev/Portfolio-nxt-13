@@ -19,6 +19,15 @@ body {
   --light-background: rgba(123, 74, 226, 0.1);
 }
 
+.sectionLine::before {
+  display: block;
+    content: '';
+    width: 350px;
+    height: .5px;
+    background-color: var(--dark-violet);
+    margin: 65px auto;
+}
+
 .container {
   max-width: 95%;
   margin: auto;

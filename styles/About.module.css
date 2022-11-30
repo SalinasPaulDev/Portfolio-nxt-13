@@ -1,18 +1,18 @@
 .content {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     max-width: 80%;
-    border: 1px solid red;
     margin: auto;
     padding: 80px 10px;
 }
+
 
 .photo {
     width: 60%;
 }
 
 .aboutData{
-    border: 1px solid red;
     width: 100%;
     padding: 5px 10px;
     display: flex;
