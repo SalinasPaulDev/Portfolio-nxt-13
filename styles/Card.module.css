@@ -1,0 +1,24 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20rem;
+    min-width: 15rem;
+    margin: 3rem auto;
+    border: 1px solid var(--dark-violet);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.date {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--first-color);
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+}
+
+.actual {
+    background-color: var(--light-background);
+}

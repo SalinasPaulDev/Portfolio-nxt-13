@@ -68,3 +68,8 @@ ul>li:hover {
   font-size: 17px;
 }
 
+.description {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: auto;
+}

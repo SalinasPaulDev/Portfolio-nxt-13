@@ -1,4 +1,4 @@
-import React from 'react'
+'use client'
 import Button from '../../../components/Button/Button'
 import ArrowDown from '../../../components/icons/ArrowDown'
 import GithubIcon from '../../../components/icons/Github'

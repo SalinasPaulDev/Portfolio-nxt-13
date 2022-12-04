@@ -3,8 +3,9 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     min-height: 10rem;
-    margin: 2rem 0 ;
+    margin: 2rem auto ;
     gap: 10px;
+
 }
 
 .cardContainer {
@@ -13,7 +14,7 @@
     max-width: 17rem;
     min-height: 10rem;
     padding: 20px;
-    margin: .8rem 0;
+    margin: .8rem auto;
 
 }
 

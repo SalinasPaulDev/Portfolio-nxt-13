@@ -21,7 +21,15 @@ const Card = ({ project }) => {
       <div className={Styles.content}>
         <h4>{project.title}</h4>
         <p>{project.description}</p>
-        <Ticket text='Typescript' size='small' />
+        <div style={{ display: 'flex' }}>
+          {
+          project.labels.map(l => (
+
+            <Ticket key={l} text={l} size='small' />
+
+          ))
+        }
+        </div>
         <Image src={Img} alt='project-img' className={Styles.img} />
       </div>
 
