@@ -1,8 +1,10 @@
 .container {
+    position: fixed;
     height: 64px;
     width: 80%;
     background: var(--element-background);
     border-radius: 16px;
+    backdrop-filter: blur(15px);
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
@@ -12,4 +14,6 @@
     align-items: center;
     justify-content: flex-end;
     padding: 15px;
+    left: 0;
+    right: 0;
 }

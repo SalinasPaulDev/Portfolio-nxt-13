@@ -6,7 +6,7 @@
     flex-direction: column;
     padding: 15px;
     width: 100%;
-    min-height: 15rem;
+    min-height: 60vh;
 }
 
 .content{
@@ -15,5 +15,5 @@
     flex-wrap: wrap;
     align-items: center;
     width: 80%;
-    margin: 5rem auto;
+    margin: 5rem auto 0;
 }

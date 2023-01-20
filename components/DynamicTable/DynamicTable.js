@@ -23,9 +23,9 @@ const Card = ({ project }) => {
         <p>{project.description}</p>
         <div style={{ display: 'flex' }}>
           {
-          project.labels.map(l => (
+          project.labels.map(label => (
 
-            <Ticket key={l} text={l} size='small' />
+            <Ticket key={label} text={label} size='small' />
 
           ))
         }

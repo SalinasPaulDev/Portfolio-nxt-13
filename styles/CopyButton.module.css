@@ -1,0 +1,13 @@
+.CopyButton {
+    background-color: transparent;
+    color: var(--dark-violet);
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    transition: .2s ease-in;
+}
+
+.CopyButton:hover {
+    background-color: var(--light-background);
+}

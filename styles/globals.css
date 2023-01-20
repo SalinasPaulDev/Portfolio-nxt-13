@@ -11,7 +11,7 @@ body {
 
 :root {
   --background: #090E16;
-  --element-background: rgba(123, 74, 226, 0.05);
+  --element-background: rgba(109, 51, 234, 0.05);
   --first-color: #7B4AE2;
   --white: #FFFFFF;
   --grey: rgba(255, 255, 255, 0.5);
@@ -40,8 +40,9 @@ a {
 ul {
   display: flex;
   list-style: none;
+  gap: 15px;
 }
-ul>li {
+.link {
   margin: auto 15px;
   color: var(--grey);
   cursor: pointer;
@@ -52,8 +53,13 @@ ul>li {
   -o-transition: 0.2s ease-in;
 }
 
-ul>li:hover {
+.link:hover {
   color: var(--first-color);
+}
+
+.active {
+  color: var(--first-color);
+  font-weight: 600;
 }
 
 .subtitle {

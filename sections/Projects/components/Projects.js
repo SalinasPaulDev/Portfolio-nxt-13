@@ -11,8 +11,9 @@ const getDataProjects = () => {
 
 export const Projects = async () => {
   const projects = await getDataProjects()
+
   return (
-    <div className='sectionLine' style={{ width: '100%', margin: 'auto' }}>
+    <div className='sectionLine' style={{ width: '100%', margin: 'auto', minHeight: '100vh', padding: '3rem auto' }} id='project'>
       <Ticket text='⛓️ Portfolio' />
       <h2 className='subtitle'>Trabajos y Projectos</h2>
       <div className={Styles.table}>

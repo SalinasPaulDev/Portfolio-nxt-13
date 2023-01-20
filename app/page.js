@@ -1,4 +1,5 @@
 import { About } from '../sections/About/components/About'
+import { Contact } from '../sections/Contact/components/Contact'
 import { Experience } from '../sections/Experience/components/Experience'
 import Header from '../sections/Header/components/Header'
 import { Projects } from '../sections/Projects/components/Projects'
@@ -10,6 +11,7 @@ export default function App () {
       <About />
       <Projects />
       <Experience />
+      <Contact />
     </div>
   )
 }

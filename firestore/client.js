@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app'
-import { getFirestore, collection, getDocs, Query } from 'firebase/firestore'
+import { getFirestore, collection, getDocs, Query, doc, collectionGroup } from 'firebase/firestore'
 
 const firebaseConfig = {
   apiKey: 'AIzaSyDVpUWNa4ai2168ygDKcjWKzGTH2u0ctcY',
@@ -20,4 +20,18 @@ export async function getProjects () {
   const dataSnapshot = await getDocs(data)
   const dataList = dataSnapshot.docs.map(doc => doc.data())
   return dataList
+}
+
+export async function getExperience () {
+  const experienceData = collection(db, 'experience')
+  const professionalData = collection(db, 'professional')
+
+  const dataSnapshot = await getDocs(experienceData)
+  const professionalSnapshot = await getDocs(professionalData)
+  const experienceList = dataSnapshot.docs.map(doc => doc.data())
+  const professionalList = professionalSnapshot.docs.map(doc => doc.data())
+  return {
+    experienceList,
+    professionalList
+  }
 }

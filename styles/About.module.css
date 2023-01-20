@@ -5,6 +5,7 @@
     max-width: 80%;
     margin: auto;
     padding: 80px 10px;
+    min-height: 100vh;
 }
 
 

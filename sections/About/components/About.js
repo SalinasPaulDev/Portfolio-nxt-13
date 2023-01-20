@@ -8,7 +8,7 @@ import '../../../styles/globals.css'
 export const About = () => {
   return (
     <div className='sectionLine'>
-      <div className={styles.content}>
+      <div className={styles.content} id='about'>
         <div className={styles.photo}>
           <Image src={User} alt='user' width={250} height={250} />
         </div>
