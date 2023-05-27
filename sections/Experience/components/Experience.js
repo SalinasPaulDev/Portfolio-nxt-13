@@ -3,10 +3,12 @@ import { Card } from '../../../components/Card/Card'
 import Ticket from '../../../components/Ticket/Ticket'
 import { getExperience } from '../../../firestore/client'
 import Styles from '../../../styles/Experience.module.css'
+import moment from 'moment'
 
 const getExperienceData = () => {
   return getExperience()
 }
+
 export const Experience = async () => {
   const experience = await getExperienceData()
 
@@ -21,7 +23,14 @@ export const Experience = async () => {
             <p className='description'>2021 · actual</p>
             {
               experience.professionalList.map((item) => (
-                <Card key={item.title} actual title={item.title} description={item.description} />
+                <Card
+                  key={item.title}
+                  actual={item.isActual}
+                  title={item.title}
+                  description={item.description}
+                  startDate={item.startDate}
+                  endDate={item.endDate}
+                />
               ))
             }
 
@@ -31,7 +40,14 @@ export const Experience = async () => {
             <p className='description'>2020 · actual</p>
             {
               experience.experienceList.map((item) => (
-                <Card key={item.title} actual title={item.title} description={item.description} />
+                <Card
+                  key={item.title}
+                  actual={item.isActual}
+                  title={item.title}
+                  description={item.description}
+                  startDate={item.startDate}
+                  endDate={item.endDate}
+                />
               ))
             }
           </div>

@@ -4,6 +4,7 @@
     align-items: flex-start;
     width: 20rem;
     min-width: 15rem;
+    height: 10rem;
     margin: 3rem auto;
     border: 1px solid var(--dark-violet);
     padding: 15px;
@@ -17,6 +18,14 @@
     width: 100%;
     text-align: right;
     padding: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.date>p {
+    font-size: 14px;
 }
 
 .actual {

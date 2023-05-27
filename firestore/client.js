@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app'
-import { getFirestore, collection, getDocs, Query, doc, collectionGroup } from 'firebase/firestore'
+import { getFirestore, collection, getDocs } from 'firebase/firestore'
 
 const firebaseConfig = {
   apiKey: 'AIzaSyDVpUWNa4ai2168ygDKcjWKzGTH2u0ctcY',
@@ -28,7 +28,7 @@ export async function getExperience () {
 
   const dataSnapshot = await getDocs(experienceData)
   const professionalSnapshot = await getDocs(professionalData)
-  const experienceList = dataSnapshot.docs.map(doc => doc.data())
+  const experienceList = dataSnapshot.docs.map(doc => doc.data()).sort((a, b) => a.positionId - b.positionId)
   const professionalList = professionalSnapshot.docs.map(doc => doc.data())
   return {
     experienceList,
