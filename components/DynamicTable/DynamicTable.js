@@ -50,21 +50,20 @@ const Card = ({ project }) => {
         />
       </div>
       <div style={{ display: 'flex', gap: 16, justifyContent: 'center' }}>
-        <Link href='https://www.google.com'>
+        <Link href={project.githubUrl}>
           <Button
             data={githubButtonProps}
             style={{ height: '30px', alignItems: 'center', width: '100px' }}
             textStyle={{ fontSize: '12px' }}
           />
         </Link>
-        <Link href='https://www.youtube.com'>
+        <Link href={project.webUrl}>
           <Button
             data={websiteButtonProps}
             textStyle={{ fontSize: '12px' }}
             style={{ height: '30px', alignItems: 'center', width: '100px' }}
           />
         </Link>
-
       </div>
     </div>
   )
