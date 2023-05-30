@@ -19,8 +19,9 @@ export const About = () => {
           <p>
             <span>👋 Me llamo Brian Paul Salinas Jara pero podes decirme Brai o Paul </span>
             <span>👨‍🎓 Actualmente estudio en la Facultad de Ingenieria de Lomas de Zamora la Tecnicatura en Programacion de computadoras</span>
-            <span>👨‍💻 Con mas de 2 años programando con tecnologias como JavaScript, React y Typescript </span>
-            <span>💡 Me interesan el desarrollo front-end utilizando React/React Native, las posibilidades para aprender nuevas tecnologias y aportar ideas dentro de mi equipo de trabajo</span>
+            <span>👨‍💻 Con mas de 2 años programando con tecnologias como React, React Native y Typescript para Front End y NodeJS, MySQL y MongoDB para el Back End y Base de datos </span>
+            <span>💡 Me interesan el desarrollo Front-end utilizando React/React Native, las posibilidades para aprender nuevas tecnologias y aportar ideas dentro de mi equipo de trabajo</span>
+            <span>🎯 Mi objetivo actual es seguir estudiando Python para fortalecer y ampliar mis conocimientos</span>
           </p>
         </div>
       </div>

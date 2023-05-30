@@ -20,9 +20,11 @@ const Header = () => {
       <Navbar />
       <div className={headerStyle.container} id='header'>
         <div>
-          <Ticket text='👋 Saludos! ' />
+          <div className={headerStyle.ticket}>
+            <Ticket text='👋 Saludos! ' />
+          </div>
           <h1 className={headerStyle.title}>Brian Paul Salinas Jara</h1>
-          <p className={headerStyle.subtitle}>Front-end developer</p>
+          <p className={headerStyle.subtitle}>Full-stack developer</p>
           <div className={headerStyle.icons}>
             <Link href='https://www.linkedin.com/in/brian-pauldev/'>
               <LinkedinIcon />
