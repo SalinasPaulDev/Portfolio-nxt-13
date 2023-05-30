@@ -27,3 +27,9 @@
     font-size: 16px;
     color: rgba(123, 74, 226, 0.8);
 }
+
+@media(max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+}

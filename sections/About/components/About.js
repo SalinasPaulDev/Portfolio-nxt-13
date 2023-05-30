@@ -13,7 +13,9 @@ export const About = () => {
           <Image src={User} alt='user' width={250} height={250} />
         </div>
         <div className={styles.aboutData}>
-          <Ticket text='🧐 Sobre mi' />
+          <div className={styles.ticket}>
+            <Ticket text='🧐 Sobre mi' />
+          </div>
           <p>
             <span>👋 Me llamo Brian Paul Salinas Jara pero podes decirme Brai o Paul </span>
             <span>👨‍🎓 Actualmente estudio en la Facultad de Ingenieria de Lomas de Zamora la Tecnicatura en Programacion de computadoras</span>

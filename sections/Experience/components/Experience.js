@@ -15,8 +15,10 @@ export const Experience = async () => {
   return (
     <div className='sectionLine' id='experience'>
       <div className={Styles.container}>
-        <Ticket text='🧷 Experiencia' style={{ marginBottom: '2rem' }} size='small' />
-        <h2 className='subtitle' style={{ textAlign: 'center' }}>Trayectoria</h2>
+        <div className={Styles.title}>
+          <Ticket text='🧷 Experiencia' style={{ marginBottom: '2rem' }} />
+          <h2 className='subtitle' style={{ textAlign: 'center' }}>Trayectoria</h2>
+        </div>
         <div className={Styles.content}>
           <div>
             <h2 className='subtitle'>Area Profesional</h2>
@@ -37,7 +39,7 @@ export const Experience = async () => {
           </div>
           <div>
             <h2 className='subtitle'>Academica</h2>
-            <p className='description'>2020 · actual</p>
+            <p className='description'>2019 · actual</p>
             {
               experience.experienceList.map((item) => (
                 <Card

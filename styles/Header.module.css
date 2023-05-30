@@ -71,3 +71,22 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .icons {
+        margin: auto;
+        margin-bottom: 30px;
+        gap: 20px;
+    }
+
+    .contentDownload {
+        align-items: center;
+    }
+}

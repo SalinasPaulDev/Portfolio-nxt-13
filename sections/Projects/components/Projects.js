@@ -14,8 +14,10 @@ export const Projects = async () => {
 
   return (
     <div className='sectionLine' style={{ width: '100%', margin: 'auto', minHeight: '100vh', padding: '3rem auto' }} id='project'>
-      <Ticket text='⛓️ Portfolio' />
-      <h2 className='subtitle'>Trabajos y Projectos</h2>
+      <div className={Styles.title}>
+        <Ticket text='⛓️ Portfolio' />
+        <h2 className='subtitle'>Trabajos y Projectos</h2>
+      </div>
       <div className={Styles.table}>
         <DynamicTable projects={projects} />
       </div>
