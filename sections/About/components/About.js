@@ -10,7 +10,11 @@ export const About = () => {
     <div className='sectionLine'>
       <div className={styles.content} id='about'>
         <div className={styles.photo}>
-          <Image src={User} alt='user' width={250} height={250} />
+          <Image
+            src={User} alt='user' width={260} height={340} style={{
+              maskImage: 'linear-gradient(black 80% , transparent), linear-gradient(to left, black, transparent)'
+            }}
+          />
         </div>
         <div className={styles.aboutData}>
           <div className={styles.ticket}>

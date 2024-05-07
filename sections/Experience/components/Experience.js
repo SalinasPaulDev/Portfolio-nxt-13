@@ -3,7 +3,6 @@ import { Card } from '../../../components/Card/Card'
 import Ticket from '../../../components/Ticket/Ticket'
 import { getExperience } from '../../../firestore/client'
 import Styles from '../../../styles/Experience.module.css'
-import moment from 'moment'
 
 const getExperienceData = () => {
   return getExperience()

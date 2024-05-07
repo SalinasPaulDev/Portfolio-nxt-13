@@ -13,15 +13,17 @@ export const Projects = async () => {
   const projects = await getDataProjects()
 
   return (
-    <div className='sectionLine' style={{ width: '100%', margin: 'auto', minHeight: '100vh', padding: '3rem auto' }} id='project'>
-      <div className={Styles.title}>
-        <Ticket text='⛓️ Portfolio' />
-        <h2 className='subtitle'>Trabajos y Projectos</h2>
-      </div>
-      <div className={Styles.table}>
-        <DynamicTable projects={projects} />
-      </div>
+    <>
+      <div className='sectionLine' style={{ width: '100%', margin: 'auto', minHeight: '100vh', padding: '3rem auto' }} id='project'>
+        <div className={Styles.title}>
+          <Ticket text='⛓️ Portfolio' />
+          <h2 className='subtitle'>Trabajos y Projectos</h2>
+        </div>
+        <div className={Styles.table}>
+          <DynamicTable projects={projects} />
+        </div>
 
-    </div>
+      </div>
+    </>
   )
 }

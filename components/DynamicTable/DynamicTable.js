@@ -1,14 +1,12 @@
 import React from 'react'
 import Styles from '../../styles/DynamicTable.module.css'
 import Ticket from '../Ticket/Ticket'
-import Img from '../../public/img/testBackgroundImage.jpg'
 import Image from 'next/image'
 import Button from '../../components/Button/Button'
-import WspIcon from '../icons/Wsp'
-import GithubIcon from '../icons/Github'
 import GithubOutline from '../icons/Github-outline'
 import WebIcon from '../icons/Web'
 import Link from 'next/link'
+import { truncateText } from '../../utils'
 
 export const DynamicTable = ({ projects = [] }) => {
   return (
@@ -34,19 +32,25 @@ const Card = ({ project }) => {
   return (
     <div className={Styles.cardContainer}>
       <div className={Styles.content}>
-        <h4>{project.title}</h4>
-        <p>{project.description}</p>
-        <div style={{ display: 'flex', gap: 5, flexWrap: 'wrap' }}>
-          {project.labels.map((label) => (
-            <Ticket key={label} text={label} size='small' />
-          ))}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          <h4>{project.title}</h4>
+          <div>
+            <p>
+              {truncateText(project.description)}
+            </p>
+          </div>
+          <div style={{ display: 'flex', gap: 5, flexWrap: 'wrap' }}>
+            {project.labels.map((label) => (
+              <Ticket key={label} text={label} size='small' />
+            ))}
+          </div>
         </div>
         <Image
           src={project.img}
           alt='project-img'
           className={Styles.img}
-          width={100}
-          height={100}
+          width={247}
+          height={165}
         />
       </div>
       <div style={{ display: 'flex', gap: 16, justifyContent: 'center' }}>

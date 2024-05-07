@@ -31,3 +31,7 @@ export const formatDate = (startDate) => {
       return null
   }
 }
+
+export function truncateText (source, size = 130) {
+  return source.length > size ? source.slice(0, size - 1) + '…' : source
+}

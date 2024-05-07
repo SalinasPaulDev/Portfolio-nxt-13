@@ -1,5 +1,4 @@
 'use client'
-import Link from 'next/link'
 import React from 'react'
 import Button from '../../../components/Button/Button'
 import { CopyButton } from '../../../components/CopyButton/CopyButton'
@@ -19,7 +18,9 @@ export const Contact = () => {
         <Ticket text='📫 Contacto' />
         <h2 className='subtitle'>Vamos a conversar!</h2>
         <div className={Styles.content}>
-          <Button data={buttonProps} />
+          <a href='https://api.whatsapp.com/send?phone=524423797173' target='_blank' rel='noreferrer'>
+            <Button data={buttonProps} />
+          </a>
           <div className={Styles.emailContent}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <EmailIcon />
@@ -29,7 +30,6 @@ export const Contact = () => {
             <CopyButton id='copyEmail'>
               <p>salinaspaul.dev@gmail.com</p>
             </CopyButton>
-
           </div>
         </div>
       </div>
