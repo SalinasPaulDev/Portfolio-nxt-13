@@ -3,6 +3,7 @@
 	"rules": {
 		"no-unused-vars": "warn",
 		"no-tabs": "off",
-		"react/jsx-indent-props": "off"
+		"react/jsx-indent-props": "off",
+		"react/no-children-prop" : "off"
 	}
 }

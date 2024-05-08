@@ -35,16 +35,16 @@ const Header = () => {
           </div>
         </div>
         <div className={headerStyle.contentDownload}>
-          <Link
+          <a
             href='https://drive.google.com/file/d/1oLbqQPS0inL6qtF-JoTAKVk6EBCi_DbN/view?usp=sharing'
             target='_blank'
             rel='noreferrer'
           >
             <div className={headerStyle.downloadMessage}>
-              <p>Bajar CV</p>
+              <p>CV</p>
               <ArrowDown />
             </div>
-          </Link>
+          </a>
           <a href='https://api.whatsapp.com/send?phone=524423797173' target='_blank' rel='noreferrer'>
             <Button data={buttonProps} />
           </a>

@@ -33,7 +33,7 @@ const Card = ({ project }) => {
     <div className={Styles.cardContainer}>
       <div className={Styles.content}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-          <h4>{project.title}</h4>
+          <h3 style={{ fontSize: '22px' }}>{project.title}</h3>
           <div>
             <p>
               {truncateText(project.description)}
