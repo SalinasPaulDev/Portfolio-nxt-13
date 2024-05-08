@@ -8,6 +8,7 @@ import WspIcon from '../../../components/icons/Wsp'
 import Navbar from '../../../components/Navbar/Navbar'
 import Ticket from '../../../components/Ticket/Ticket'
 import headerStyle from '../../../styles/Header.module.css'
+import { SwipeButton } from '../../../components/SwipeButton/SwipeButton'
 
 const Header = () => {
   const buttonProps = {
@@ -50,6 +51,7 @@ const Header = () => {
           </a>
         </div>
       </div>
+      <SwipeButton />
     </>
   )
 }

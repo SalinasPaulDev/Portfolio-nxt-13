@@ -1,0 +1,64 @@
+.container {
+    position: relative;
+    margin: .5rem auto;
+    padding: 4px 8px;
+    border-radius: 20px;
+    width: 8.5rem;
+    min-height: 40px;
+    background-color: var(--white);
+    opacity: 30%;
+    transition: 3s ease-in;
+}
+
+.ball {
+    position: relative;
+    z-index: 8;
+    width: 35px;
+    height: 35px; 
+    background-color: rgba(128, 128, 128, 0.671);
+    border-radius: 50%;
+    animation: 1.6s linear infinite;
+    animation-name: swipe; 
+}
+
+.content {
+    position: relative;
+    opacity: 1;
+    transition: 1s ease-in;
+}
+
+.hidden {
+    animation: 3s linear 1;
+    animation-name: disappear; 
+    animation-fill-mode: forwards;
+}
+
+
+.text {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@keyframes swipe{
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(5.8rem);
+    }
+}
+
+@keyframes disappear{
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: -9999;
+    }
+}
+
