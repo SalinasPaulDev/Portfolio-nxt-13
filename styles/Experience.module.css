@@ -13,7 +13,6 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* align-items: center; */
     width: 80%;
     margin: 5rem auto 0;
 }
@@ -29,6 +28,18 @@
 
     .title>h2 {
         font-size: 36px;
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        justify-content: center;
+
     }
 
 }
