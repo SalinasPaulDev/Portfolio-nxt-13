@@ -4,8 +4,9 @@
     align-items: center;
     max-width: 80%;
     margin: auto;
-    padding: 80px 10px;
+    padding: 50px 10px;
     min-height: 100vh;
+    margin-top: 6rem;
 }
 
 
@@ -39,7 +40,7 @@
     }
 
     .photo {
-        width: 100%;
+        display: none;
     }
 
     .aboutData > p > span {
