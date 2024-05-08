@@ -7,7 +7,7 @@
     width: 8em;
     border-radius: 16px;
     padding: 8px 15px;
-    margin: 16px auto;
+    margin: 16px auto 0;
     transition: .1s ease-in;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;

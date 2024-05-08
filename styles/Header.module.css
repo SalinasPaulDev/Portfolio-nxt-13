@@ -105,4 +105,8 @@
         width: 100%;
         justify-content: center;
     }
+
+    .container {
+        height: 80vh;
+    }
 }
