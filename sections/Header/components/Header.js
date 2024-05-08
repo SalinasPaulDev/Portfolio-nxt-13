@@ -41,7 +41,7 @@ const Header = () => {
             rel='noreferrer'
           >
             <div className={headerStyle.downloadMessage}>
-              <p>CV</p>
+              <p>Descargar CV</p>
               <ArrowDown />
             </div>
           </a>
